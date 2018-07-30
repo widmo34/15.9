@@ -7,7 +7,8 @@ class App extends React.Component{
             searchText: '',
             users: []
         };
-    
+
+       
     }    
         
     onChangeHandle(event) {
@@ -25,9 +26,9 @@ class App extends React.Component{
 
     render(){
         return(
-            <div>
+            <div className={'main'} >
                 <form onSubmit={event => this.onSubmit(event)}>
-                <label htmlFor="searchText">Search by user name </label>
+                <label htmlFor="searchText">Search by user name on https://github.com/ </label>
                 <input 
                  type="text"
                  id="searchText"
@@ -63,7 +64,7 @@ class Userlist extends React.Component {
 class User extends React.Component{
     render(){
         return(
-            <div>
+            <div className={'single'}>
                 <img src={this.props.user.avatar_url} style={{maxWidth: '100px'}} />
                 <a href={this.props.user.html_url} target="_blank"> {this.props.user.login}</a>
             </div>    

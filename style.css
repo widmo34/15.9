@@ -1,0 +1,21 @@
+body{
+    background-color:lemonchiffon; 
+    margin: 0;
+    padding: 0;
+    
+}
+
+.main{
+    background-color: aqua;
+    font-size: 22px;
+    width: 100wh;
+    height: 50px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 10px; 
+}
+
+
+.single{
+    margin-top: 40px;
+}

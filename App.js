@@ -8,7 +8,10 @@ class App extends React.Component{
             users: []
         };
     
-    }    
+         
+    }
+    
+    
         
     onChangeHandle(event) {
         this.setState({searchText: event.target.value})
@@ -25,7 +28,7 @@ class App extends React.Component{
 
     render(){
         return(
-            <div>
+            <div style={{margin: '0 auto'}}>
                 <form onSubmit={event => this.onSubmit(event)}>
                 <label htmlFor="searchText">Search by user name </label>
                 <input 
